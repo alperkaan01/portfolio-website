@@ -1,4 +1,5 @@
 import { SocialIcon } from "react-social-icons"
+import { ButtonGroup } from "reactstrap"
 import styled from "styled-components"
 
 export const Container = styled.div`
@@ -78,4 +79,10 @@ export const PortfolioMainImage = styled.img`
     @media screen and (max-width: 768px){
         display: none;
     } 
+`
+
+export const RadioButtons = styled( ButtonGroup )`
+
+    
+
 `
