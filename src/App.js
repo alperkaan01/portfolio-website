@@ -8,6 +8,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/">
+            <Route path="/portfolio-website" element={<Homepage />} />
             <Route path="/" element={<Homepage />} />
         </Route>
       </Routes>
