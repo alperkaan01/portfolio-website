@@ -1,5 +1,5 @@
 import { SocialIcon } from "react-social-icons"
-import { ButtonGroup } from "reactstrap"
+import { Button } from "reactstrap"
 import styled from "styled-components"
 
 export const Container = styled.div`
@@ -43,31 +43,39 @@ export const InnerTitle = styled.h1`
     font-family: cursive, fantasy;
 `
 
+export const InnerTitleInfo = styled.h4`
+    position: fixed;
+    display: inline-block;
+    top: 49%;
+    left: 10%;
+    font-family: cursive, fantasy;
+`
+
 export const InfoSectionContainer = styled.div`
     position: absolute;
     top: 34%;
     left: 37%;
     width: 26rem;
     height: 20rem;
-    background: white;
+    background: #FFFBF5;
 `
 
 export const Github = styled(SocialIcon)`
     position:fixed;
     left: 92%;
-    top: 30%;
+    top: 26%;
 `
 
 export const LinkedIn = styled(SocialIcon)`
     position:fixed;
     left: 88.9%;
-    top: 40%;
+    top: 42%;
 `
 
 export const Twitter = styled(SocialIcon)`
     position:fixed;
     left: 85.8%;
-    top: 50%;
+    top: 58%;
 `
 
 export const PortfolioMainImage = styled.img`
@@ -81,8 +89,35 @@ export const PortfolioMainImage = styled.img`
     } 
 `
 
-export const RadioButtons = styled( ButtonGroup )`
 
+export const CImage = styled.img`
+    position: fixed;
+    width: 3.8rem;
+    height: 4rem;
+
+    top: 24%;
+    left: 40.5%;
+`
+
+export const PyImage = styled.img`
+    position: fixed;
+    width: 3.8rem;
+    height: 4rem;
+
+    top: 24%;
+    left: 48.5%;
+`
+
+export const JsImage = styled.img`
+    position: fixed;
+    width: 3.8rem;
+    height: 4rem;
+
+    top: 24%;
+    left: 56.5%;
+`
+
+export const CppCodeSample = styled.h4`
     
 
 `
