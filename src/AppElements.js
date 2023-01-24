@@ -12,3 +12,14 @@ export const Container = styled.div`
     height: 100%;
     background: #F7EFE5;
 `
+
+export const PortfolioMainImage = styled.img`
+    position: fixed;
+    width: 10rem;
+    right: 17%;
+    top: 13%;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    } 
+`
