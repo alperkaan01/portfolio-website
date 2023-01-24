@@ -103,12 +103,35 @@ const Homepage = () => {
                 <span style={{ position: "relative", color: "brown" }}>
                   "Lets go and explore my world"
                 </span>
-                );{" "}
+                ){" "}
               </span>
             </h4>
           );
       } else {
         console.log("Js");
+        setCode(
+            <h4 style={{ position: "relative", left: "1rem" }}>
+              <br></br>
+              <span style={{ position: "relative", left: "1rem", color: "blue" }}>
+                function
+              </span>
+              <span
+                style={{ position: "relative", left: "1.5rem", color: "green" }}
+              >
+                Hello_Network_Surfer( ){" "}
+              </span>
+              <br></br>
+              <br></br>
+              <span style={{ position: "relative", left: "3rem", color: "blue" }}>
+                {" "}
+                window.alert(
+                <span style={{ position: "relative", color: "brown" }}>
+                  "Lets go and explore my world"
+                </span>
+                );{" "}
+              </span>
+            </h4>
+          );
       }
     }
     setClicked(false);
@@ -163,7 +186,10 @@ const Homepage = () => {
           setData("Py");
           setClicked(true);
         }} />
-      <JsImage src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+      <JsImage src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" onClick={() => {
+          setData("Js");
+          setClicked(true);
+        }} />
 
       <PortfolioMainImage
         src={portfolioImage}
