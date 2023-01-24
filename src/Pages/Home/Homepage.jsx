@@ -7,6 +7,8 @@ import { PortfolioMainImage } from "./HomepageElements";
 
 import portfolioImage from "../../img/portfolio.png";
 
+import { Button, ButtonGroup } from 'reactstrap';
+
 const Homepage = () => {
   return (
     <Container>
@@ -18,6 +20,8 @@ const Homepage = () => {
       <Github url="https://github.com/alperkaan01"></Github>
       <LinkedIn url="https://www.linkedin.com/in/alper-kaan-odaba%C5%9Fo%C4%9Flu-90919b195/"></LinkedIn>
       <Twitter url="https://twitter.com/AlperKa46377607"></Twitter>
+
+
 
       <PortfolioMainImage
         src={portfolioImage}
