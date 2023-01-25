@@ -16,19 +16,19 @@ export const Navbar = () => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">ALPER KAAN</NavLogo>
+          <NavLogo to="/portfolio-website">ALPER KAAN</NavLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/">Projects</NavLinks>
+              <NavLinks to="/portfolio-website/projects">Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/">About</NavLinks>
+              <NavLinks to="/portfolio-website/about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/">Education</NavLinks>
+              <NavLinks to="/portfolio-website/education">Education</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/">Contact Me</NavLinks>
+              <NavLinks to="/portfolio-website/contact-me">Contact Me</NavLinks>
             </NavItem>
 
           </NavMenu>
