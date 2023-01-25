@@ -19,6 +19,7 @@ import {
   LanguageContainer,
   LImage,
   LinkedIn,
+  PortfolioMainImageMobile,
   PyImage,
   PythonImage,
   RadioButtons,
@@ -27,6 +28,7 @@ import {
 import { PortfolioMainImage } from "./HomepageElements";
 
 import portfolioImage from "../../img/portfolio.png";
+import faceImage from "../../img/face.png";
 
 import { Button } from "reactstrap";
 
@@ -85,53 +87,53 @@ const Homepage = () => {
       } else if (data === "Py") {
         console.log("Py");
         setCode(
-            <h4 style={{ position: "relative", left: "1rem" }}>
-              <br></br>
-              <span style={{ position: "relative", left: "1rem", color: "blue" }}>
-                def
+          <h4 style={{ position: "relative", left: "1rem" }}>
+            <br></br>
+            <span style={{ position: "relative", left: "1rem", color: "blue" }}>
+              def
+            </span>
+            <span
+              style={{ position: "relative", left: "1.5rem", color: "green" }}
+            >
+              Hello_Network_Surfer( ):{" "}
+            </span>
+            <br></br>
+            <br></br>
+            <span style={{ position: "relative", left: "3rem", color: "blue" }}>
+              {" "}
+              print(
+              <span style={{ position: "relative", color: "brown" }}>
+                "Lets go and explore my world"
               </span>
-              <span
-                style={{ position: "relative", left: "1.5rem", color: "green" }}
-              >
-                Hello_Network_Surfer( ):{" "}
-              </span>
-              <br></br>
-              <br></br>
-              <span style={{ position: "relative", left: "3rem", color: "blue" }}>
-                {" "}
-                print(
-                <span style={{ position: "relative", color: "brown" }}>
-                  "Lets go and explore my world"
-                </span>
-                ){" "}
-              </span>
-            </h4>
-          );
+              ){" "}
+            </span>
+          </h4>
+        );
       } else {
         console.log("Js");
         setCode(
-            <h4 style={{ position: "relative", left: "1rem" }}>
-              <br></br>
-              <span style={{ position: "relative", left: "1rem", color: "blue" }}>
-                function
+          <h4 style={{ position: "relative", left: "1rem" }}>
+            <br></br>
+            <span style={{ position: "relative", left: "1rem", color: "blue" }}>
+              function
+            </span>
+            <span
+              style={{ position: "relative", left: "1.5rem", color: "green" }}
+            >
+              Hello_Network_Surfer( ){" "}
+            </span>
+            <br></br>
+            <br></br>
+            <span style={{ position: "relative", left: "3rem", color: "blue" }}>
+              {" "}
+              window.alert(
+              <span style={{ position: "relative", color: "brown" }}>
+                "Lets go and explore my world"
               </span>
-              <span
-                style={{ position: "relative", left: "1.5rem", color: "green" }}
-              >
-                Hello_Network_Surfer( ){" "}
-              </span>
-              <br></br>
-              <br></br>
-              <span style={{ position: "relative", left: "3rem", color: "blue" }}>
-                {" "}
-                window.alert(
-                <span style={{ position: "relative", color: "brown" }}>
-                  "Lets go and explore my world"
-                </span>
-                );{" "}
-              </span>
-            </h4>
-          );
+              );{" "}
+            </span>
+          </h4>
+        );
       }
     }
     setClicked(false);
@@ -182,19 +184,30 @@ const Homepage = () => {
           setClicked(true);
         }}
       />
-      <PyImage src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" onClick={() => {
+      <PyImage
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        onClick={() => {
           setData("Py");
           setClicked(true);
-        }} />
-      <JsImage src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" onClick={() => {
+        }}
+      />
+      <JsImage
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        onClick={() => {
           setData("Js");
           setClicked(true);
-        }} />
+        }}
+      />
 
       <PortfolioMainImage
         src={portfolioImage}
         alt="portfolio Image"
       ></PortfolioMainImage>
+
+      <PortfolioMainImageMobile
+        src={faceImage}
+        alt="portfolio Image"
+      ></PortfolioMainImageMobile>
     </Container>
   );
 };
