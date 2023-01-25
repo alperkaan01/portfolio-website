@@ -18,7 +18,7 @@ export const Container = styled.div`
 export const InnerStyleContainer = styled.div`
   position: fixed;
   width: 30rem;
-  height: 50rem;
+  height: 100%;
   right: 0;
   /* background: gray; */
   background: #c3acd0;
