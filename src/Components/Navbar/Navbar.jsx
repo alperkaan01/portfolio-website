@@ -19,13 +19,13 @@ export const Navbar = () => {
           <NavLogo to="/portfolio-website">ALPER KAAN</NavLogo>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/portfolio-website/projects">Projects</NavLinks>
+              <NavLinks to="/portfolio-website/projects">Skills</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="/portfolio-website/about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="/portfolio-website/education">Education</NavLinks>
+              <NavLinks to="/portfolio-website/education">Projects</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="/portfolio-website/contact-me">Contact Me</NavLinks>

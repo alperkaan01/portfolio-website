@@ -12,16 +12,17 @@ export const Container = styled.div`
 
   width: 100%;
   height: 100%;
-  background: #f7efe5;
+  background: white;
 `;
 
 export const InnerStyleContainer = styled.div`
-  position: fixed;
-  width: 30rem;
-  height: 100%;
-  right: 0;
-  /* background: gray; */
-  background: #c3acd0;
+    position: fixed;
+    top: 23%;
+    border-radius: 100%;
+    width: 16rem;
+    height: 35%;
+    left: 52rem;
+    background: #8c52ff;
 `;
 
 export const InnerStyleContainerSocial = styled.div`

@@ -35,17 +35,17 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #674188;
+    color: black;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.4rem;
-    font-family: cursive, fantasy;
+    font-family: 'Vollkorn SC';
     
     display: flex;
     align-items: center;
-    margin-left: 1.6rem;
+    margin-left: 5rem;
     margin-bottom: 1rem;
-    font-weight: bold;
+
     text-decoration: none;
     &:hover {
         color: black;
@@ -74,7 +74,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: 42%;
+    margin-right: 33.5%;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -85,16 +85,17 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkR)`
-    color: #674188;
+    color: black;
 
-    font-family: cursive, fantasy;
+    font-family: 'Vollkorn SC';
 
     display: flex;
     align-items:center;
     text-decoration: none;
-    padding:0 1rem;
-    height: 100%;
+    padding:0 2rem;
+    height: 70%;
     cursor: pointer;
+
     
     &:hover {
         color: black;
