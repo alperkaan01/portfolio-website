@@ -11,6 +11,7 @@ import {
   NavBtnLink,
   GithubLink,
   LinkedInLink,
+
 } from "./NavbarElements";
 
 export const Navbar = () => {
@@ -33,8 +34,8 @@ export const Navbar = () => {
               <NavLinks to="/portfolio-website/contact-me">Contact Me</NavLinks>
             </NavItem>
           </NavMenu>
-          <GithubLink onClick={ () => console.log("Github")}></GithubLink>
-          <LinkedInLink onClick={ () => console.log("Linkedin")}></LinkedInLink>
+          <GithubLink onClick={ () => window.location.href = "https://github.com/alperkaan01"}></GithubLink>
+          <LinkedInLink onClick={ () => window.location.href = "https://www.linkedin.com/in/alper-kaan-odaba%C5%9Fo%C4%9Flu-90919b195/"}></LinkedInLink>
         </NavbarContainer>
       </Nav>
     </>

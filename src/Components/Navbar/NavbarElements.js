@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkR} from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaLinkedinIn, FaMoon } from "react-icons/fa";
 
 
 

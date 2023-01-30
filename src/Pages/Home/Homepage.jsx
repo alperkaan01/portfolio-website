@@ -17,6 +17,8 @@ import tl from "../../img/tl.png";
 import Typical from "react-typical";
 import { FaArrowDown } from "react-icons/fa";
 
+import resume from "../../img/resume.pdf"
+
 const Homepage = () => {
   return (
     <Container>
@@ -39,12 +41,14 @@ const Homepage = () => {
           1300,
           'I\'m a musician 🎸 _',
           1300,
+          'I\'m a singer 🎤 _',
+          1300,
         ]}/>
         </TypicalText>
       </InnerStyleContainerSocial>
       <PortfolioMainImage></PortfolioMainImage>
       <InfoSectionContainer>
-        <DownloadX onClick ={() => console.log("alper kaan")}>
+        <DownloadX href={resume} download="Alper Kaan Odabaşoğlu CV">
           <FaArrowDown style={{
             position: "relative",
             left: "-5px",
