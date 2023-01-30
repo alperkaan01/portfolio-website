@@ -1,5 +1,5 @@
 import React from "react";
-import {FaBars} from 'react-icons/fa'
+import {FaBars, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {
   Nav,
   NavbarContainer,
@@ -9,6 +9,8 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  GithubLink,
+  LinkedInLink,
 } from "./NavbarElements";
 
 export const Navbar = () => {
@@ -30,8 +32,9 @@ export const Navbar = () => {
             <NavItem>
               <NavLinks to="/portfolio-website/contact-me">Contact Me</NavLinks>
             </NavItem>
-
           </NavMenu>
+          <GithubLink onClick={ () => console.log("Github")}></GithubLink>
+          <LinkedInLink onClick={ () => console.log("Linkedin")}></LinkedInLink>
         </NavbarContainer>
       </Nav>
     </>

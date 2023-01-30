@@ -16,24 +16,23 @@ export const Container = styled.div`
 `;
 
 export const InnerStyleContainer = styled.div`
-    position: fixed;
-    top: 23%;
-    border-radius: 100%;
-    width: 16rem;
-    height: 35%;
-    left: 52rem;
-    background: #8c52ff;
+  position: fixed;
+  top: 23%;
+  border-radius: 100%;
+  width: 16rem;
+  height: 35%;
+  left: 52rem;
+  background: #8c52ff;
 `;
 
 export const InnerStyleContainerSocial = styled.div`
   position: fixed;
-  width: 7rem;
-  height: 27rem;
-  right: 41px;
+  width: 28rem;
+  height: 20rem;
+  left: 21rem;
   background: white;
-  top: 15%;
-
-  background: #fffbf5;
+  top: 17%;
+  background: transparent;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -52,12 +51,26 @@ export const InnerTitle = styled.h1`
   }
 `;
 
-export const InnerTitleInfo = styled.h4`
-  position: fixed;
+export const InnerTitleInfo = styled.h1`
   display: inline-block;
-  top: 49%;
-  left: 10%;
-  font-family: cursive, fantasy;
+  top: 3rem;
+  position: relative;
+  left: 2.5rem;
+  font-family: "Vollkorn SC";
+  font-weight: normal;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const TypicalText = styled.h3`
+  display: inline-block;
+  top: 3rem;
+  position: relative;
+  left: 2.5rem;
+  font-family: "Vollkorn SC";
+  font-weight: normal;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -66,12 +79,14 @@ export const InnerTitleInfo = styled.h4`
 
 export const InfoSectionContainer = styled.div`
   position: absolute;
-  top: 34%;
-  left: 37%;
-  width: 26rem;
-  height: 20rem;
-  background: #fffbf5;
-
+  top: 56%;
+  left: 25%;
+  width: 16rem;
+  height: 4rem;
+  background: transparent;
+  border-color: black;
+  border: groove;
+  border-width: 0.2px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -81,8 +96,6 @@ export const Github = styled(SocialIcon)`
   position: fixed;
   left: 92%;
   top: 26%;
-
-
 `;
 
 export const LinkedIn = styled(SocialIcon)`
@@ -95,7 +108,6 @@ export const Twitter = styled(SocialIcon)`
   position: fixed;
   left: 85.8%;
   top: 58%;
-
 `;
 
 export const PortfolioMainImage = styled.img`
@@ -110,7 +122,6 @@ export const PortfolioMainImage = styled.img`
 `;
 
 export const PortfolioMainImageMobile = styled.img`
-
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -164,5 +175,30 @@ export const JsImage = styled.img`
 export const CppCodeSample = styled.h4`
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const DownloadX = styled(Button)`
+  color: black;
+
+  position: absolute;
+  font-family: "Vollkorn SC";
+
+  background-color: white;
+
+  top: 1.2rem;
+  left: 0.8rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  cursor: pointer;
+
+  border-style: none;
+  border: none;
+
+  &:hover {
+    color: black;
+    border-bottom: 2px solid black;
   }
 `;

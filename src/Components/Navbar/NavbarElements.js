@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkR} from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 
 
 
@@ -74,7 +75,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: 33.5%;
+    margin-right: 33.5%; //33.5%
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -115,15 +116,16 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
-    background: rgba(255, 170, 159, 1);
-    white-space: nowrap;
-    padding: 10px 22px;
-    color: #010606;
+export const GithubLink = styled( FaGithub )`
+    position: absolute;
+    top:6px;
+    right: 7rem;
+    width: 3rem;
+    height: 3rem;
     font-size: 1rem;
     outline: none;
     border: none;
+    border-radius: 100%;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
@@ -132,4 +134,22 @@ export const NavBtnLink = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
+`
+
+export const LinkedInLink = styled( FaLinkedin )`
+    position: absolute;
+    background: #378fe9;;
+    color: white;
+    top:6px;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
 `

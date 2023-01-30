@@ -1,14 +1,21 @@
 import React from "react";
 import {
   Container,
-  Github,
+  DownloadX,
+  GithubButton,
+  InfoSectionContainer,
   InnerStyleContainer,
-  LinkedIn,
+  InnerStyleContainerSocial,
+  InnerTitleInfo,
   PortfolioMainImage,
+  TypicalText,
 } from "./HomepageElements";
 import c_img from "../../img/s.png";
 import avatar from "../../img/avatar.png";
 import tl from "../../img/tl.png";
+
+import Typical from "react-typical";
+import { FaArrowDown } from "react-icons/fa";
 
 const Homepage = () => {
   return (
@@ -19,7 +26,39 @@ const Homepage = () => {
         style={{ position: "fixed", width: "56rem", left: "19%", top: "10%" }}
       ></img>
       <InnerStyleContainer></InnerStyleContainer>
+      <InnerStyleContainerSocial>
+        <InnerTitleInfo>Hi, I'm Alper Kaan</InnerTitleInfo>
+        <br></br>
+        <TypicalText>
+          <Typical loop={Infinity} wrapper="b" steps={[
+          'I\'m a junior computer scientist \n in Sabancı University 🏫_',
+          1300,
+          'I\'m a developer 💻 _',
+          1300,
+          'I\'m an athlete 🏃🏼 _',
+          1300,
+          'I\'m a musician 🎸 _',
+          1300,
+        ]}/>
+        </TypicalText>
+      </InnerStyleContainerSocial>
       <PortfolioMainImage></PortfolioMainImage>
+      <InfoSectionContainer>
+        <DownloadX onClick ={() => console.log("alper kaan")}>
+          <FaArrowDown style={{
+            position: "relative",
+            left: "-5px",
+            width: "1rem"
+          }}>
+            Download Resume
+          </FaArrowDown>
+          <span style={{
+            position: "relative",
+            left: "0.5rem",
+            fontSize: "15px",
+          }}>Download Resume</span>
+        </DownloadX>
+      </InfoSectionContainer>
       <img
         src={avatar}
         alt="avatar"
@@ -30,7 +69,6 @@ const Homepage = () => {
           width: "13rem",
         }}
       ></img>
-
       <img
         src={tl}
         alt="avatar"
@@ -38,7 +76,7 @@ const Homepage = () => {
           position: "fixed",
           left: "46px",
           top: "30px",
-          width: "2rem"
+          width: "2rem",
         }}
       ></img>
     </Container>
