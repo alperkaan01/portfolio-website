@@ -19,7 +19,7 @@ const Education = () => {
   return (
     <Container>
       {/* <h1>EDUCATION</h1> */}
-      {/* <Education>Education</Education>  */}
+      <Education>Education</Education> 
       <EduContainer></EduContainer>
       <Wrapper>
         <VerticalLineWrapper>

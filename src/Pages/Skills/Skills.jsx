@@ -86,7 +86,7 @@ const Skills = () => {
         scrollArea={myRef}
       /> */}
 
-      <img
+      {/* <img
         src={comp}
         alt="avatar"
         style={{
@@ -477,7 +477,7 @@ const Skills = () => {
             poor: "red",
           }}
         />
-      </ProgressFlutter>
+      </ProgressFlutter> */}
     </Container>
   );
 };

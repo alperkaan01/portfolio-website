@@ -31,7 +31,7 @@ const Homepage = () => {
     <>
       <About></About>
       <Skills></Skills>
-      <Prof></Prof>
+      {/* <Prof></Prof> */}
       <Education></Education>
       <Experience></Experience>
       <Projects></Projects>

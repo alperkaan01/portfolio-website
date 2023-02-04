@@ -44,9 +44,9 @@ export const Navbar = () => {
             <NavItem>
               <NavLinks to = 'skills' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Skills</NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks to = 'prof' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Prof.</NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks to = 'education' smooth={true} duration={500} spy={true} exact='true' offset={-60}>Education</NavLinks>
             </NavItem>

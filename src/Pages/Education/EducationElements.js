@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-
-    position : absolute;
-    top: 7rem;
-    width: 50rem;
-    left: 10rem;
-`
+  position: absolute;
+  top: 7rem;
+  width: 50rem;
+  left: 10rem;
+`;
 
 export const EduContainer = styled.div`
   position: absolute;
@@ -19,12 +18,12 @@ export const EduContainer = styled.div`
 `;
 
 export const Education = styled.h1`
-display: inline-block;
-    top: 30rem;
-    position: relative;
-    left: 75rem;
-    font-family: "Vollkorn SC";
-    font-weight: normal;
+  display: inline-block;
+  top: 26.5rem;
+  position: relative;
+  left: 70rem;
+  font-family: "Vollkorn SC";
+  font-weight: normal;
 
   @media screen and (max-width: 768px) {
     display: none;
