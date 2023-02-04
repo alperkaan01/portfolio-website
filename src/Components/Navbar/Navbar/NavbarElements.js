@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Link as LinkR} from 'react-router-dom';
+import {Link as LinkS} from 'react-scroll';
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaMoon } from "react-icons/fa";
 
 
@@ -75,7 +76,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: 33.5%; //33.5%
+    margin-right: 20.5%; //33.5%
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -85,7 +86,7 @@ export const NavItem = styled.li`
     height: 3rem;
 `;
 
-export const NavLinks = styled(LinkR)`
+export const NavLinks = styled(LinkS)`
     color: black;
 
     font-family: 'Vollkorn SC';
